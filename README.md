@@ -1,27 +1,24 @@
 # dockerstalk
 
-A Leiningen plugin to do many wonderful things.
+A plugin to deploy Dockerfiles to AWS Beanstalk. This plugin wraps `lein-beanstalk`.
 
 ## Usage
 
-FIXME: Use this for user-level plugins:
-
-Put `[dockerstalk "0.1.0-SNAPSHOT"]` into the `:plugins` vector of your
-`:user` profile, or if you are on Leiningen 1.x do `lein plugin install
-dockerstalk 0.1.0-SNAPSHOT`.
-
-FIXME: Use this for project-level plugins:
-
 Put `[dockerstalk "0.1.0-SNAPSHOT"]` into the `:plugins` vector of your project.clj.
 
-FIXME: and add an example usage that actually makes sense:
+Configure you project as you would in `lein-beanstalk`.
 
-    $ lein dockerstalk
+````
+lein dockerstalk deploy dev {path-to-zip-file}
+````
+
+You need to build the ZIP file in advance, containing typically just the Dockerfile and the uberjar (you can use `lein-zip`).
+
+Note that `lein-dockerstalk` may well get factored into `lein-beanstalk` in the future.
 
 ## License
 
-Copyright © 2015 FIXME
+Copyright © 2015 JUXT
 
 Distributed under the Eclipse Public License either version 1.0 or (at
 your option) any later version.
-# lein-dockerstalk
