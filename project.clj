@@ -1,6 +1,6 @@
 ;; Copyright © 2014 JUXT LTD.
 
-(defproject juxt/lein-dockerstalk "0.1.0-SNAPSHOT"
+(defproject juxt/lein-dockerstalk "0.1.0"
   :description "Lein plugin for deploying docker zips to AWS Beanstalk"
   :url "http://example.com/FIXME"
   :license {:name "Eclipse Public License"
