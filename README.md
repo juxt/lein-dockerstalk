@@ -4,7 +4,7 @@ A plugin to deploy Dockerfiles to AWS Beanstalk. This plugin wraps `lein-beansta
 
 ## Usage
 
-Put `[dockerstalk "0.1.0"]` into the `:plugins` vector of your project.clj.
+Put `[juxt/lein-dockerstalk "0.1.0"]` into the `:plugins` vector of your project.clj.
 
 Configure you project as you would in `lein-beanstalk`.
 
